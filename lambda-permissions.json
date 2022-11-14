@@ -1,0 +1,22 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "dynamodb:*"
+            ],
+            "Resource": "arn:aws:dynamodb:us-east-1:327360473041:table/my-dynamo-table"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "s3:*"
+            ],
+            "Resource": [
+                "arn:aws:s3:::my-dynamodb-csv-files-1fa695a0",
+                "arn:aws:s3:::my-dynamodb-csv-files-1fa695a0/*"
+            ]
+        }
+    ]
+}
